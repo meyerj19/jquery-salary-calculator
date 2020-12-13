@@ -1,3 +1,6 @@
-button{
-    position: right;
+.total{
+    position: dynamic;
+    left: 1000px;
+    top: 200px;
+    font: 20px;
 }

@@ -2,7 +2,7 @@ console.log('js loaded!');
 
 $(document).ready(readyNow);
 
-
+//start things off
 function readyNow() {
     console.log('in ReadyNow');
 
@@ -19,7 +19,7 @@ let employees = [];
 // console.log('total monthly sum', totalMonthly);
 
 
-
+//entered data and calls the function to display on the DOM in a table
 function employeeClick() {
     console.log('in employeeClick');
     let newEmployee = {
@@ -45,13 +45,13 @@ function employeeClick() {
     sumMonthly(employees);
 
 }
-
+//removes a employee data row when delete button clicked
 function employeeDataDelete() {
     console.log('in data delete');
     $(this).parent().parent().remove()
 }
 
-
+//renders the entered employee data to the DOM
 function renderToDom() {
     console.log('in renderToDom');
     $('#employeeData').empty();
@@ -71,7 +71,8 @@ function renderToDom() {
 
 }
 
-
+/*totals the employee annual salaries, determines monthly amount, changes to fixed
+two decimal places and gives red background color is monthly ammount > 20K */
 function sumMonthly(array) {
     console.log('in sumMonthly');
     let sum = 0;
@@ -104,7 +105,7 @@ function sumMonthly(array) {
 
 
 
-
+//clears the employee input fields
 function clearInput() {
     console.log('in clearInput');
     $('#firstNameIn').val('');
