@@ -1,6 +1,27 @@
-.total{
-    position: dynamic;
-    left: 1000px;
-    top: 200px;
-    font: 20px;
+#annualSalaryAdder {
+    position: static;
+    top: 400px;
+    right: 0px;
+    left: 800px;
+    max-width: 250px;
+    
+    
+
+}
+h1{
+    text-align: center;
+}
+
+#addEmployee {
+    padding-left: 10px; 
+	padding-right: 10px; 
+	padding-top: 10px; 
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+
+h2 {
+    
+    border: gray;
 }
